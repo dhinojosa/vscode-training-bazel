@@ -1,5 +1,5 @@
 java_binary(
     name = "vs_code_bazel_runner",
-    srcs = ["Runner.java"],
+    srcs = ["**/*.java"],
     main_class = "com.xyzcorp.Runner",
 )
