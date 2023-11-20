@@ -31,4 +31,6 @@ maven_install(
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",
     ],
+    fetch_sources = True,
+    fetch_javadoc = True,
 )
