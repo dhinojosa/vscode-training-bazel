@@ -1,6 +1,6 @@
 bazel-bin
 bazel-out
 bazel-testlogs
-.idea/
-bazel-vscode-training-bazel/
 bazel-vscode-training-bazel
+.idea/
+.eclipse/
