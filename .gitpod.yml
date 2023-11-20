@@ -1,0 +1,13 @@
+tasks:
+  - name: Setup & Build Java
+    init: sdk install java 11.0.21-tem < /dev/null
+  - name: Load gpg key
+    before: echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+    init: curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+  - name: Install Bazel
+    init: sudo apt-get update && sudo apt-get install bazel
+  - name: Run Bazel
+    init: bazel build //:vs_code_bazel
+vscode:
+  extensions:
+    - "sfdc.bazel-vscode-java@1.23.111201608"
