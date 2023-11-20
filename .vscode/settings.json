@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.crswap": true,
+        ".eclipse": false,
+        ".git": false,
+        "src": false,
+        "bazel-bin": false,
+        "bazel-out": false,
+        "bazel-testlogs": false,
+        "bazel-vscode-training-bazel": false,
+        ".vscode": false
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.configuration.runtimes": [
+        {
+             "name": "JavaSE-11",
+             "path": "~/.sdkman/candidates/java/11.0.21-tem/"
+        }
+    ]
+}
