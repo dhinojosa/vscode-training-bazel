@@ -1,13 +1,6 @@
-package com.xyzcorp;
-
-public class Runner {
-  public static void main(String[] args) {
-       System.out.println("Created a bazel project");
-  }
-}
 bazel-bin
 bazel-out
 bazel-testlogs
-.idea/
-bazel-vscode-training-bazel/
 bazel-vscode-training-bazel
+.idea/
+.eclipse/
