@@ -1,0 +1,10 @@
+tasks:
+  - name: Load Bazel
+    before: sudo apt install apt-transport-https curl gnupg -y
+    init: sudo apt update && sudo apt install bazel
+  - name: Setup & Build Java
+    before: sdk install java 11.0.21-tem < /dev/null
+    init: bazel build //:vs_code_bazel
+vscode:
+  extensions:
+    - "sfdc.bazel-vscode-java"

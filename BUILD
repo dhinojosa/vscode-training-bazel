@@ -1,6 +1,6 @@
 java_binary(
     name = "vs_code_bazel",
-    srcs = glob(["src/main/java/com/xyzcorp/*.java"]),
+    srcs = glob(["src/main/java/**/*.java"]),
     main_class = "com.xyzcorp.Runner",
 )
 
